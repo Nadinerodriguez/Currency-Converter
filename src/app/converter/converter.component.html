@@ -1,8 +1,14 @@
-<h1>Currency Converter</h1>
 
-<input type="number" placeholder="amount" [value]="amount">
+<div class="container">
+    <h1>Currency Converter</h1>
 
-<label>From: </label> <span>{{from}}</span>
-<label>To: </label> <span>{{to}}</span>
+    <input type="number" placeholder="amount" [(ngModel)]="amount">
 
-<b>{{amount.toFixed(2)}} {{from}} = {{convert()}} {{to}}</b>
+    <label>From: {{from}}</label>
+    <label>To: {{to}}</label> 
+
+    <br>
+
+    <b>{{amount.toFixed(2)}} {{from}} = {{convert()}} {{to}}</b>
+
+</div>
