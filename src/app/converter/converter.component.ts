@@ -10,9 +10,9 @@ export class ConverterComponent implements OnInit {
   amount = 1;
   from = 'CAD';
   to = 'USD';
-  rate = 0.74;
+  rate = 0.78;
 
-  convert(): number {
+  convert(): number{
     return this.amount * this.rate;
   }
 
